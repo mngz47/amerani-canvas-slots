@@ -50,6 +50,7 @@ let slotMachine = (config) => {
 		let first = winningRow[0]
 		if(winningRow.every((item) => item.type === first.type)){
 			winnerDiv.innerHTML = `<p> Congrats! You have won a cup of <span style='color: ${first.color}'> ${first.type} </span> </p>`
+			syncCredits(50);
 		}
 	}
 
